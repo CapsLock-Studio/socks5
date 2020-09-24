@@ -29,7 +29,6 @@ app
       .uniq()
       .value();
     const stats = await Promise.all(socks5.map(reachable));
-    console.log(stats.filter(Boolean).length)
     const servers = await Promise.all(
       socks5
         .filter((sock, index) => stats[index])
