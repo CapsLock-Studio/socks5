@@ -4,6 +4,7 @@
 	},
 	"dependencies": {
 		"axios": "^0.20.0",
+		"axios-socks5-agent": "^1.0.1",
 		"is-reachable": "^4.0.0",
 		"koa": "^2.13.0",
 		"koa-compress": "^5.0.1",

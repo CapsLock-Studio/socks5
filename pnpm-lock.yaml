@@ -1,5 +1,6 @@
 dependencies:
   axios: 0.20.0
+  axios-socks5-agent: 1.0.1
   is-reachable: 4.0.0
   koa: 2.13.0
   koa-compress: 5.0.1
@@ -48,6 +49,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
+  /axios-socks5-agent/1.0.1:
+    dependencies:
+      socks5-http-client: 1.0.4
+      socks5-https-client: 1.2.1
+    dev: false
+    resolution:
+      integrity: sha512-IhnPYjH7Z1zhcCLRp+pPMIEU7s8ILXyFn8u+8xUEh9J1GBIEycAodEQ2Cqa+IjDC0FvE8Yr3s12+Kgnq+iRLqQ==
   /axios/0.20.0:
     dependencies:
       follow-redirects: 1.13.0
@@ -375,6 +383,16 @@ packages:
     dev: false
     resolution:
       integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
+  /ip-address/6.1.0:
+    dependencies:
+      jsbn: 1.1.0
+      lodash: 4.17.20
+      sprintf-js: 1.1.2
+    dev: false
+    engines:
+      node: '>= 0.10'
+    resolution:
+      integrity: sha512-u9YYtb1p2fWSbzpKmZ/b3QXWA+diRYPxc2c4y5lFB/MMk5WZ7wNZv8S3CFcIGVJ5XtlaCAl/FQy/D3eQ2XtdOA==
   /is-generator-function/1.0.7:
     dev: false
     engines:
@@ -402,6 +420,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-eCTBKm9K6nO3H1S3BrJBAqZJIVXKNdwDuGl6KHf1bnf/bn02BvEe+l+MypjsxbqZ7mt5oMhu+bS/mm7G2FRW3A==
+  /jsbn/1.1.0:
+    dev: false
+    resolution:
+      integrity: sha1-sBMHyym2GKHtJux56RH4A8TaAEA=
   /json-buffer/3.0.0:
     dev: false
     resolution:
@@ -493,6 +515,10 @@ packages:
       node: ^4.8.4 || ^6.10.1 || ^7.10.1 || >= 8.1.4
     resolution:
       integrity: sha512-i/XJVOfPw7npbMv67+bOeXr3gPqOAw6uh5wFyNs3QvJ47tUx3M3V9rIE0//WytY42MKz4l/MXKyGkQ2LQTfLUQ==
+  /lodash/4.17.20:
+    dev: false
+    resolution:
+      integrity: sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
   /lowercase-keys/1.0.1:
     dev: false
     engines:
@@ -685,6 +711,34 @@ packages:
     dev: false
     resolution:
       integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
+  /socks5-client/1.2.8:
+    dependencies:
+      ip-address: 6.1.0
+    dev: false
+    engines:
+      node: '>= 6.4.0'
+    resolution:
+      integrity: sha512-js8WqQ/JjZS3IQwUxRwSThvXzcRIHE8sde8nE5q7nqxiFGb8EoHmNJ9SF2lXqn3ux6pUV3+InH7ng7mANK6XfA==
+  /socks5-http-client/1.0.4:
+    dependencies:
+      socks5-client: 1.2.8
+    dev: false
+    engines:
+      node: '>= 6.4.0'
+    resolution:
+      integrity: sha512-K16meYkltPtps6yDOqK9Mwlfz+pdD2kQQQ/TCO/gu2AImUmfO6nF2uXX1YWrPs4NCfClQNih19wqLXmuUcZCrA==
+  /socks5-https-client/1.2.1:
+    dependencies:
+      socks5-client: 1.2.8
+    dev: false
+    engines:
+      node: '>= 6.4.0'
+    resolution:
+      integrity: sha512-FbZ/X/2Xq3DAMhuRA4bnN0jy1QxaPTVPLFvyv6CEj0QDKSTdWp9yRxo1JhqXmWKhPQeJyUMajHJB2UjT43pFcw==
+  /sprintf-js/1.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==
   /statuses/1.5.0:
     dev: false
     engines:
@@ -769,6 +823,7 @@ packages:
       integrity: sha512-faQrqNMzcPCHGVC2aaOINk13K+aaBDUPjGWl0teOXywElLjyVAB6Oe2jj62jHYtwsU49jXhScYbvPENK+6zAvQ==
 specifiers:
   axios: ^0.20.0
+  axios-socks5-agent: ^1.0.1
   is-reachable: ^4.0.0
   koa: ^2.13.0
   koa-compress: ^5.0.1
